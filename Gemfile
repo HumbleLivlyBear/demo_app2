@@ -16,6 +16,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :production do
+# gems specifically for Heroku go here
+gem 'therubyracer-heroku', '~> 0.8.1.pre3'
+gem "pg"
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
